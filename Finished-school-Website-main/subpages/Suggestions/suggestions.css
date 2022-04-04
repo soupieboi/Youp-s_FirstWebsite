@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.Website {
+	position: fixed;
+	right: 0;
+	width: 100%;
+	min-height: 100%;
+	padding: 100px;
+	display: flex;
+	align-items: center;
+	background-color: #111;
+	color: honeydew;
+	z-index: 2;
+}
+
+.text {
+	position: relative;
+	font-size: 0.9vw;
+	z-index: 10;
+	max-width: 30vw;
+}
+
+.Navigation {
+	position: absolute;
+	width: 85vw;
+	right: 7.5vw;
+	left: 7.5vw;
+	top: 1.5vw;
+	align-items: center;
+	z-index: 5;
+	font-size: 0.9vw;
+}
+
+.Navigation ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(37, 37, 37, 0);
+}
+
+.Navigation li {
+	position: sticky;
+	display: inline;
+	margin: 5vw;
+	padding: 5px;
+	border: 1px solid beige;
+}
+
+.Navigation a {
+	text-decoration: none;
+	color: lightyellow;
+} 
+
+.text-right {
+	z-index: 11;
+	position: absolute;
+	right: 7.5vw;
+	bottom: 5vw;
+	font-size: 0.8vw;
+}
+
+.suggestion-box {
+	position: absolute;
+	z-index: 10;
+	top: 45vh;
+	left: 32.5vw;
+	border: 3px solid beige;
+	padding: 4vw;
+	border-radius: 1vw;
+}
+
+.suggestion-box input {
+	width: 19vw;
+	height: 5vh;
+	font-size: 1vw;
+	padding: 0.4vw;
+	letter-spacing: 2px;
+	background: rgb(51, 51, 51);
+	color: white;
+	
+}
+
+.suggestion-box #input {
+	border: none;
+	outline: none;
+	border-radius: 0.6vw;
+}
+
+.suggestion-box button {
+	border: none;
+	outline: none;
+	background: rgb(51, 51, 51);
+	color: beige;
+	padding: 0.4vw;
+	margin: 1vw;
+	margin-top: 0;
+	margin-left: 1.5vw;
+	border-radius: 0.2vw;
+	transition: 0.2s;
+}
+
+.suggestion-box:hover button {
+	background: rgb(26, 26, 26);
+	padding: 0.5vw;
+}
+
+.desoupbox {
+	z-index: 10;
+	position: absolute;
+	font-size: 3vw;
+	left: 28.4vw;
+	top: 15vh;
+	color: beige;
+	letter-spacing: 0.4vw;
+	animation-name: soupbox;
+	animation-duration: 1.3s;
+}
+
+@keyframes soupbox {
+	0% {opacity: 0%;}
+	100% {opacity: 100%;}
+}

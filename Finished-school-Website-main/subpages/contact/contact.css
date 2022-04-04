@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+.Website {
+	position: fixed;
+	right: 0;
+	width: 100%;
+	min-height: 100%;
+	padding: 100px;
+	display: flex;
+	align-items: center;
+	background-color: #111;
+	color: honeydew;
+	z-index: 2;
+}
+
+.text {
+	position: relative;
+	font-size: 0.9vw;
+	z-index: 10;
+	max-width: 30vw;
+}
+
+.Navigation {
+	position: absolute;
+	width: 85vw;
+	right: 7.5vw;
+	left: 7.5vw;
+	top: 1.5vw;
+	align-items: center;
+	z-index: 5;
+	font-size: 0.9vw;
+}
+
+.Navigation ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(37, 37, 37, 0);
+}
+
+.Navigation li {
+	position: sticky;
+	display: inline;
+	margin: 5vw;
+	padding: 5px;
+	border: 1px solid beige;
+}
+
+.Navigation a {
+	text-decoration: none;
+	color: lightyellow;
+} 
+
+.text-right {
+	z-index: 11;
+	position: absolute;
+	right: 7.5vw;
+	bottom: 5vw;
+	font-size: 0.8vw;
+}
+
+.Instagram img {
+	position: absolute;
+	height: auto;
+	max-width: 3vw;
+	right: 28vw;
+	top: 27vh;
+	animation-name: Instadrop;
+	animation-duration: 3s;
+}
+
+@keyframes Instadrop {
+	0% {top: 25vh; opacity: 0%;}
+	20% {top: 27vh; opacity: 100%;}
+}
+
+.Instagram h3 {
+	position: absolute;
+	left: 74.8vw;
+	top: 28.5vh;
+}
+
+.Facebook img {
+	position: absolute;
+	height: auto;
+	max-width: 3vw;
+	right: 28vw;
+	top: 36vh;
+	animation-name: Facebookdrop;
+	animation-duration: 3s;
+}
+
+@keyframes Facebookdrop {
+	0% {top: 25vh; opacity: 0%;}
+	20% {top: 27vh; opacity: 0%;}
+	40% {top: 36vh; opacity: 100%;}
+}
+
+.Facebook h3 {
+	position: absolute;
+	left: 74.8vw;
+	top: 37.5vh;
+}
+
+.Youtube img {
+	position: absolute;
+	height: auto;
+	max-width: 3vw;
+	right: 28vw;
+	top: 45vh;
+	animation-name: Youtubedrop;
+	animation-duration: 3s;
+}
+
+@keyframes Youtubedrop {
+	0% {top: 25vh; opacity: 0%;}
+	20% {top: 27vh; opacity: 0%;}
+	40% {top: 36vh; opacity: 0%;}
+	60% {top: 45vh; opacity: 100%;}
+}
+
+.Youtube h3 {
+	position: absolute;
+	left: 74.8vw;
+	top: 46.5vh;
+}
+
+.Twitter img {
+	position: absolute;
+	height: auto;
+	max-width: 3vw;
+	right: 28vw;
+	top: 54vh;
+	animation-name: Twitterdrop;
+	animation-duration: 3s;
+}
+
+@keyframes Twitterdrop {
+	0% {top: 25vh; opacity: 0%;}
+	20% {top: 27vh; opacity: 0%;}
+	40% {top: 36vh; opacity: 0%;}
+	60% {top: 45vh; opacity: 0%;}
+	80% {top: 54vh; opacity: 100%;}
+}
+
+.Twitter h3 {
+	position: absolute;
+	left: 74.8vw;
+	top: 55.5vh;
+}
+
+.Email img {
+	position: absolute;
+	height: auto;
+	max-width: 3vw;
+	right: 28vw;
+	top: 63vh;
+	animation-name: Emaildrop;
+	animation-duration: 3s;
+}
+
+@keyframes Emaildrop {
+	0% {top: 25vh; opacity: 0%;}
+	20% {top: 27vh; opacity: 0%;}
+	40% {top: 36vh; opacity: 0%;}
+	60% {top: 45vh; opacity: 0%;}
+	80% {top: 54vh; opacity: 0%;}
+	100% {top: 63vh; opacity: 100%;}
+}
+
+.Email h3 {
+	position: absolute;
+	left: 74.8vw;
+	top: 64.5vh;
+}
+
+.socialwrap h3 {
+	color: beige;
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	animation-name: social-load;
+	animation-duration: 3.4s;
+	font-size: 1vw;
+}
+
+@keyframes social-load {
+	0% {opacity: 0%; left: 70vw;}
+	90% {opacity: 0%; left: 70vw;}
+	100% {opacity: 100%; left: 74.8vw;}
+}
+
+.Main-text h2 {
+	position: absolute;
+	top: 15vh;
+	left: 10vw;
+	font-size: 3vw;
+	color: beige;
+}
+
+.Phone-text h3 {
+	position: absolute;
+	left: 10vw;
+	font-size: 1.3vw;
+	top: 80vh;
+	color: beige;
+	border: 1px solid beige;
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: underline;
+}
+
+.Suggestions h2 {
+	position: absolute;
+	color: beige;
+	font-size: 1.5vw;
+	left: 25vw;
+	top: 30vh;
+}
+
+.btn {
+	z-index: 10;
+	position: absolute;
+	top: 40vh;
+	left: 36vw;
+	padding: 0.4vw;
+	border-radius: 10px;
+	background: bisque;
+	transition-duration: 0.3s;
+	font-size: 1vw;
+	text-decoration: none;
+	color: #111;
+}
+
+.btn:hover {
+	background: rgb(228, 201, 169);
+}
+
+#abtn {
+	text-decoration: none;
+}
